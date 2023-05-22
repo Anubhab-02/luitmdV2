@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="markdown.css">
+    <title>Luit.md-Markdown Text Editor</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="mdBox" id="editor">
+            <nav class="navbar">
+                <div class="navlist">
+
+                </div>
+            </nav>
+            <textarea id="textarea" contenteditable onkeyup="Render()" placeholder="Write or Import your markdown files here..."></textarea>
+            <div class="btns">
+            <button id="Open" onclick="Open()">Open</button>
+            <button onclick="Render()">Render</button>
+            <button id="Save" onclick="Save()">Save</button>
+            <button id="SaveAs" onclick="SaveAs()">Save As</button>
+            <button id="Print" onclick="Print()">Print</button>
+            </div>
+
+        </div>
+
+       
+
+
+        <div class="otBox" id="Renderer">
+            <div id="output">
+
+            </div>
+
+            <button id="myButton" onclick="toggleClass()">Read</button>
+        </div>
+    </div>
+
+
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/markdown-it/dist/markdown-it.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/markdown-it-mathjax"></script>
+
+ 
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>

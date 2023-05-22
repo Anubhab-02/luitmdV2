@@ -1,0 +1,53 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding-bottom: 0.8rem;
+    padding-top: 0.5rem;
+}
+
+p {
+    padding-bottom: 0.8rem;
+}
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 0.5em;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+blockquote {
+    color: rgb(141, 141, 141);
+    padding-left: 1em;
+    top: 50%;
+}
+
+ul,
+ol {
+    padding-left: 2rem;
+    padding-bottom: 0.8rem;
+}
+
+
+textarea{
+    resize: none;
+}
+
+textarea:focus {
+    outline:none;
+    border:none;
+ }
